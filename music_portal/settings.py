@@ -52,6 +52,10 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://musicportal1-production.up.railway.app'
+]
+
 ROOT_URLCONF = 'music_portal.urls'
 
 TEMPLATES = [
