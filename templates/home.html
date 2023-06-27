@@ -38,11 +38,8 @@
     <h3>Songs</h3>
     <div>
         {% for music in music_list %}
-        <div>
-            {{music.title}} <br>
-            <audio controls > <source src=" {% if music.file %} {{ music.file.url }} {% endif %}" type="audio/wav">
-    
-        </div>
+       
+        <a href="{{music.file.url}}"> {{music.title}} </a>
         <hr>
         {% endfor %}
     </div>
